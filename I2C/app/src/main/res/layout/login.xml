@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <Switch
+            android:id="@+id/sw"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp" />
+
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:background="@drawable/edit"
+            android:text="ENG/VN"
+            android:textColor="#fff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/id"
+                android:layout_width="120dp"
+                android:layout_height="94dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="42dp"
+                android:text="ID CARD"
+                android:textSize="25dp"
+                android:onClick="onClick"
+                android:layout_toStartOf="@+id/bar" />
+
+            <Button
+                android:id="@+id/bar"
+                android:layout_width="120dp"
+                android:layout_height="94dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="152dp"
+                android:text="BAR CODE"
+                android:textSize="25dp"
+                android:onClick="onClick"
+                android:layout_marginTop="42dp" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/buttonselector" />
+
+    </LinearLayout>
+
+</RelativeLayout>
